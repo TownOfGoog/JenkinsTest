@@ -2,6 +2,7 @@ pipeline {
     agent any
     tools {nodejs 'node'}
 
+    
     stages {
         stage('Install Dependencies') {
             steps {
@@ -13,6 +14,10 @@ pipeline {
             steps {
                 sh 'npm test'
             }
+            
+        }
+        stage('install Jest'){
+            npm install --save-dev jest
         }
     }
 
