@@ -9,13 +9,13 @@ pipeline {
                 sh 'npm install'
             }
         }
-
-        stage('install Jest') {
+        
+        stage('Install Dependencies') {
             steps {
-                
-                sh 'npm install --save-dev --g jest-cli'
+                sh 'npm install jest-cli --g'
             }
         }
+
         stage('Run Tests') {
             steps {
                 sh 'npm test'
