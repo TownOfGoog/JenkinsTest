@@ -12,7 +12,7 @@ tpipeline {
         
         stage('Install jest') {
             steps {
-                sh 'npm install jest-cli --g'
+                sh 'npm install --save-dev --g jest-cli'
             }
         }
 
