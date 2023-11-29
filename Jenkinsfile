@@ -1,4 +1,4 @@
-pipeline {
+tpipeline {
     agent any
     tools {nodejs 'node'}
 
@@ -10,7 +10,7 @@ pipeline {
             }
         }
         
-        stage('Install Dependencies') {
+        stage('Install jest') {
             steps {
                 sh 'npm install jest-cli --g'
             }
