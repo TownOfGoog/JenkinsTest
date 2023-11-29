@@ -1,4 +1,4 @@
-tpipeline {
+pipeline {
     agent any
     tools {nodejs 'node'}
 
