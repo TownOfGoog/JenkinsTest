@@ -11,7 +11,9 @@ pipeline {
         }
 
         stage('install Jest'){
+            steps {
             npm install --save-dev --g jest-cli
+            }
         }
         stage('Run Tests') {
             steps {
